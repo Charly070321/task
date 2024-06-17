@@ -1,0 +1,53 @@
+/* src/Utilities.css */
+.utilities-container {
+  padding: 20px;
+}
+
+.utility-steps {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.utility-steps .step {
+  width: 30px;
+  height: 30px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.utility-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.utility-select {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.utility-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.utility-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.utility-button.back {
+  background-color: #e0e0ff;
+    color: #6200ea;
+}
+
+.utility-button.proceed {
+  background-color: #6200ea;
+    color: #fff;
+}

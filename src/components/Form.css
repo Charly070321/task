@@ -1,0 +1,60 @@
+.form-container {
+    padding: 20px;
+  }
+  
+  .providers {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .provider {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+  }
+  
+  .provider.selected {
+    border-color: #6200ea;
+  }
+  
+  .provider img {
+    max-height: 40px;
+  }
+  
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .add-to-cart {
+    background-color: #e0e0ff;
+    color: #6200ea;
+  }
+  
+  .proceed-to-checkout {
+    background-color: #6200ea;
+    color: #fff;
+  }
+
+  /* // utilities csss */
+  

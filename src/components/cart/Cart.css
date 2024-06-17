@@ -1,0 +1,30 @@
+/* src/Cart.css */
+.cart-container {
+    padding: 20px;
+  }
+  
+  .cart-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-container li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .cart-container button {
+    background-color: #e0e0ff;
+    color: #6200ea;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  
+  .cart-container .checkout {
+    margin-top: 20px;
+    width: 100%;
+  }
+  

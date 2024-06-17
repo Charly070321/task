@@ -1,0 +1,26 @@
+.main-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #f5f5f5;
+  }
+  
+  .tab.active {
+    background-color: #e0e0ff;
+    color: #6200ea;
+    border-bottom: 2px solid #6200ea;
+  }
+      
