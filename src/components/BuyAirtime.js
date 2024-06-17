@@ -24,7 +24,7 @@ const BuyAirtime = ({ addToCart, navigateToCart }) => {
     };
     try {
       const response = await airtimeTopup(topupData);
-      console.log('Airtime top-up response:', response); // Log the response to inspect in the console
+      console.log('Airtime top-up response:', response); 
       addToCart({
         type: 'Airtime',
         provider: selectedProvider,

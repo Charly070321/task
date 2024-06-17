@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import BuyAirtime from './BuyAirtime';
 import BuyData from './BuyData';
-import Cart from './cart/Cart'; // Ensure this path is correct based on your project structure
+import Cart from './cart/Cart';
 import './Main.css';
 import Utilities from './utility/Utilities';
 import { authenticate } from '../api';
