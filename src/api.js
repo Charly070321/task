@@ -1,9 +1,10 @@
-// src/api.js
 import axios from 'axios';
 
+// Base URL for the API
 const baseURL = 'https://topup.seerbitapigateway.com/api';
 let authToken = '';
 
+// Function to authenticate and get a token
 export const authenticate = async () => {
   try {
     const response = await axios.post(`${baseURL}/auth`, {
@@ -18,11 +19,13 @@ export const authenticate = async () => {
   }
 };
 
+// Function to get the authentication headers
 const getAuthHeaders = () => ({
   Authorization: `Bearer ${authToken}`,
   'Content-Type': 'application/json',
 });
 
+// Function to retry the request after re-authentication
 const retryAuth = async (requestFn) => {
   try {
     await authenticate();
@@ -33,6 +36,7 @@ const retryAuth = async (requestFn) => {
   }
 };
 
+// Function to make airtime top-up API call
 export const airtimeTopup = async (topupData) => {
   const request = () => axios.post(`${baseURL}/topup/exec/msisdn`, topupData, { headers: getAuthHeaders() });
 
@@ -48,6 +52,7 @@ export const airtimeTopup = async (topupData) => {
   }
 };
 
+// Function to make data top-up API call
 export const dataTopup = async (topupData) => {
   const request = () => axios.post(`${baseURL}/datatopup/exec/msisdn`, topupData, { headers: getAuthHeaders() });
 

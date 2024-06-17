@@ -1,4 +1,5 @@
-// src/Cart.js
+// src/cart/Cart.js
+
 import React from 'react';
 import './Cart.css';
 
@@ -26,6 +27,5 @@ const Cart = ({ cartItems, removeFromCart, proceedToCheckout }) => {
     </div>
   );
 };
-
 
 export default Cart;

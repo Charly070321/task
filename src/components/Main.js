@@ -1,8 +1,9 @@
 // src/Main.js
+
 import React, { useState, useEffect } from 'react';
 import BuyAirtime from './BuyAirtime';
 import BuyData from './BuyData';
-import Cart from './cart/Cart';
+import Cart from './cart/Cart'; // Ensure this path is correct based on your project structure
 import './Main.css';
 import Utilities from './utility/Utilities';
 import { authenticate } from '../api';
@@ -17,6 +18,12 @@ const Main = () => {
 
   const addToCart = (item) => {
     setCartItems([...cartItems, item]);
+  };
+
+  const removeFromCart = (index) => {
+    const updatedCart = [...cartItems];
+    updatedCart.splice(index, 1);
+    setCartItems(updatedCart);
   };
 
   const navigateToCart = () => {
@@ -34,7 +41,7 @@ const Main = () => {
       return <Utilities addToCart={addToCart} />;
     }
     if (activeTab === 'cart') {
-      return <Cart cartItems={cartItems} />;
+      return <Cart cartItems={cartItems} removeFromCart={removeFromCart} />;
     }
   };
 
